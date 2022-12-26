@@ -18,13 +18,8 @@ const showMarkup = () => {
 };
 showMarkup();
 
-const onGalleryListClick = (event) => {
-	event.preventDefault();
-	const lightbox = new SimpleLightbox(".gallery a", {
-		captionsData: "alt",
-		captionPosition: "bottom",
-		captionDelay: 250,
-	});
-};
-
-galleryListEl.addEventListener("click", onGalleryListClick);
+const lightbox = new SimpleLightbox(".gallery a", {
+	captionsData: "alt",
+	captionPosition: "bottom",
+	captionDelay: 250,
+});
